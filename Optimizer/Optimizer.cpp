@@ -4,6 +4,8 @@
 #include "stdafx.h"
 #include "Optimizer.h"
 
+#include "MainFrameWnd.h"
+
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	_In_opt_ HINSTANCE hPrevInstance,
 	_In_ LPTSTR    lpCmdLine,
@@ -16,6 +18,27 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	if (FAILED(hr))
 	{
 		return 0;
+	}
+
+	// 设置关联实例
+	CPaintManagerUI::SetInstance(hInstance);
+	// 设置皮肤路径
+	CPaintManagerUI::SetCurrentPath(CPaintManagerUI::GetInstancePath());
+	CPaintManagerUI::SetResourcePath(_T("Skin"));
+	//CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _T("Skin"));
+	//CPaintManagerUI::SetResourceZip(_T("Skin.zip"));
+
+	CMainFrameWnd* pFrame = new CMainFrameWnd(_T("MainFrame.xml"));
+
+	pFrame->Create(NULL, _T("BarPCMaster"), UI_WNDSTYLE_DIALOG, 0);
+	pFrame->CenterWindow();
+	pFrame->ShowWindow();
+
+	CPaintManagerUI::MessageLoop();
+
+	if (nullptr != pFrame)
+	{
+		delete pFrame;
 	}
 
 	::CoUninitialize();

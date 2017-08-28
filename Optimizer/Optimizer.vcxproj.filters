@@ -30,12 +30,18 @@
     <ClInclude Include="Optimizer.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MainFrameWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Optimizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrameWnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
