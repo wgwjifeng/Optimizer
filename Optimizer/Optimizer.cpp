@@ -12,5 +12,13 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
 
+	HRESULT hr = ::CoInitialize(NULL);
+	if (FAILED(hr))
+	{
+		return 0;
+	}
+
+	::CoUninitialize();
+
 	return 0;
 }

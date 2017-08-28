@@ -17,5 +17,17 @@
 #include <memory.h>
 #include <tchar.h>
 
+// ATL 头文件
+#define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
+#include <atlbase.h>
+#include <atlstr.h>
 
-// TODO: 在此处引用程序需要的其他头文件
+// STL 头文件
+#include <vector>
+#include <list>
+#include <map>
+
+// DuiLib 头文件
+#include "UIlib.h"
+#include "Utils/Utils.h"
+using namespace DuiLib;
