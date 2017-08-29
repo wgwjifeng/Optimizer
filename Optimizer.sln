@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Optimizer", "Optimizer\Optimizer.vcxproj", "{E79013CA-01E3-4880-870F-3204CA717D56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E1DA85F-3380-47EB-BB27-8EFF6580C653} = {6E1DA85F-3380-47EB-BB27-8EFF6580C653}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib_Static", "DuiLib\DuiLib_Static.vcxproj", "{6E1DA85F-3380-47EB-BB27-8EFF6580C653}"
 EndProject

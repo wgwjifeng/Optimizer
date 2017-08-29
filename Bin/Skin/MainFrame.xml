@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="600,650" roundcorner="1,0,0,0" caption="0,0,0,35" showshadow="true" shadowimage="shadow.png" shadowcorner="23,13,23,33">
+	<!-- 字体定义 -->
+	<Font id = "0" name="微软雅黑" size="16" bold="true" italic="false" />
+	<Font id = "1" name="微软雅黑" size="12" bold="false" italic="false" />
+	<Font id = "2" name="微软雅黑" size="16" bold="false" italic="false" />
+
+	<VerticalLayout bkcolor="#FFFBFCFC">
+		<!-- 标题区域 -->
+		<HorizontalLayout height="35" bkcolor="#FFEFF5F8">
+			<HorizontalLayout>
+				<Container width="25" height="25" bkimage="file='Skin\logo.png' source='0,0,436,435' dest='8,8,30,30' " /> 
+				<Text text="小斑马系统优化工具" pos="27,10,200,30" float="true" textcolor="#FF000000" font="1" />
+			</HorizontalLayout>
+			<HorizontalLayout width="50" inset="0,1,0,0">
+				<!--<Button name="aboutbtn" tooltip="关于" float="true" pos="0,5,19,24" width="21"
+						normalimage=" file='Skin\btn_menu.png' source='0,0,19,19'"
+						hotimage=" file='Skin\btn_menu.png' source='19,0,38,19'"
+						pushedimage=" file='Skin\btn_menu.png' source='38,0,57,19'"/>-->
+				<Button name="btn_close" tooltip="关闭" float="true" pos="0,0,50,35" width="50"
+						normalimage=" file='Skin\btn_close.png' source='0,0,50,35'"
+						hotimage=" file='Skin\btn_close.png' source='50,0,100,35'"
+						pushedimage=" file='Skin\btn_close.png' source='100,0,150,35'"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+
+		<!-- 中间区域 -->
+		<HorizontalLayout>
+			<VerticalLayout width="580" bkcolor="#FFFBFCFC" inset="20,20,20,20">
+				<!-- 立即体检主界面 -->
+				<VerticalLayout name="tab_layout_main" visible="true">
+					<Text text="请选择你需要的优化效果" pos="20,0,200,23" float="true" textcolor="#FF2D97DE" font="0" />
+					<Text text="根据本系统安装的位置选择适当的优化选项，可满足各类场景的个性化使用。" pos="20,30,580,50" float="true" textcolor="#FF222222" font="1" />
+					<VerticalLayout float="true" pos="20,70,550,210" bkcolor="#F7F8F8FF">
+						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\home.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Text text="家庭系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
+						<Text text="此选项适合家庭、办公或程序开发人员使用的系统，启用此选项后会自动创建宽带连接的快捷方式到桌面上，并开启一系列家庭网络所需的系统服务，如共享、防火墙、Windows自动更新、打印机等服务。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
+						<Option float="true" pos="0,0,520,140" name="opt_home" focusbordercolor="#FF2D97DE" bordersize="1" />
+					</VerticalLayout>
+					<VerticalLayout float="true" pos="20,220,550,360" bkcolor="#F7F8F8FF">
+						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\netbar.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Text text="网吧系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
+						<Text text="此选项适合网吧玩家使用的系统，启用此选项后会自动关闭一些网吧客户机系统中几乎不会使用到的服务，如共享服务或防火墙服务等。同时也会对系统做一些特殊优化保证适合大部分网吧网民的使用习惯。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
+						<Option float="true" pos="0,0,520,140" name="opt_netbar" focusbordercolor="#FF2D97DE" bordersize="1" />
+					</VerticalLayout>
+					<VerticalLayout float="true" pos="20,370,550,520" bkcolor="#F7F8F8FF">
+						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\geek.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Text text="极客系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
+						<Text text="此选项适一些系统极客使用，该选项会关闭大部分无关紧要的服务，如美化和某些外设所需的服务。我们假定您对 Windows 系统非常了解，否则请不要选择此选项。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
+						<Option float="true" pos="0,0,520,140" name="opt_fastmode" focusbordercolor="#FF2D97DE" bordersize="1" />
+					</VerticalLayout>
+				</VerticalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+
+		<!-- 状态栏 -->
+		<HorizontalLayout height="60" bkcolor="#FF3D556D" name="footer">
+		<Button name="btn_close" tooltip="关闭" text="关闭" float="true" pos="180,10,290,50" bkcolor="#FFF28537" font="2" textcolor="#FFFFFFFF"/>
+			<Button name="btn_apply" tooltip="应用" text="应用" float="true" pos="310,10,420,50" bkcolor="#FF2D97DE" font="2" textcolor="#FFFFFFFF"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>
