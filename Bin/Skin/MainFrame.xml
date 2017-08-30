@@ -9,18 +9,18 @@
 		<!-- 标题区域 -->
 		<HorizontalLayout height="35" bkcolor="#FFEFF5F8">
 			<HorizontalLayout>
-				<Container width="25" height="25" bkimage="file='Skin\logo.png' source='0,0,436,435' dest='8,8,30,30' " /> 
+				<Container width="25" height="25" bkimage="file='logo.png' source='0,0,436,435' dest='8,8,30,30' " /> 
 				<Text text="小斑马系统优化工具" pos="27,10,200,30" float="true" textcolor="#FF000000" font="1" />
 			</HorizontalLayout>
 			<HorizontalLayout width="50" inset="0,1,0,0">
 				<!--<Button name="aboutbtn" tooltip="关于" float="true" pos="0,5,19,24" width="21"
-						normalimage=" file='Skin\btn_menu.png' source='0,0,19,19'"
-						hotimage=" file='Skin\btn_menu.png' source='19,0,38,19'"
-						pushedimage=" file='Skin\btn_menu.png' source='38,0,57,19'"/>-->
+						normalimage=" file='btn_menu.png' source='0,0,19,19'"
+						hotimage=" file='btn_menu.png' source='19,0,38,19'"
+						pushedimage=" file='btn_menu.png' source='38,0,57,19'"/>-->
 				<Button name="btn_close" tooltip="关闭" float="true" pos="0,0,50,35" width="50"
-						normalimage=" file='Skin\btn_close.png' source='0,0,50,35'"
-						hotimage=" file='Skin\btn_close.png' source='50,0,100,35'"
-						pushedimage=" file='Skin\btn_close.png' source='100,0,150,35'"/>
+						normalimage=" file='btn_close.png' source='0,0,50,35'"
+						hotimage=" file='btn_close.png' source='50,0,100,35'"
+						pushedimage=" file='btn_close.png' source='100,0,150,35'"/>
 			</HorizontalLayout>
 		</HorizontalLayout>
 
@@ -32,19 +32,19 @@
 					<Text text="请选择你需要的优化效果" pos="20,0,200,23" float="true" textcolor="#FF2D97DE" font="0" />
 					<Text text="根据本系统安装的位置选择适当的优化选项，可满足各类场景的个性化使用。" pos="20,30,580,50" float="true" textcolor="#FF222222" font="1" />
 					<VerticalLayout float="true" pos="20,70,550,210" bkcolor="#F7F8F8FF">
-						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\home.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Container float="true" pos="10,30,110,110" bkimage="file='home.png' source='0,0,80,80' dest='0,0,80,80' " />
 						<Text text="家庭系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
 						<Text text="此选项适合家庭、办公或程序开发人员使用的系统，启用此选项后会自动创建宽带连接的快捷方式到桌面上，并开启一系列家庭网络所需的系统服务，如共享、防火墙、Windows自动更新、打印机等服务。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
 						<Option float="true" pos="0,0,520,140" name="opt_home" focusbordercolor="#FF2D97DE" bordersize="1" />
 					</VerticalLayout>
 					<VerticalLayout float="true" pos="20,220,550,360" bkcolor="#F7F8F8FF">
-						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\netbar.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Container float="true" pos="10,30,110,110" bkimage="file='netbar.png' source='0,0,80,80' dest='0,0,80,80' " />
 						<Text text="网吧系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
 						<Text text="此选项适合网吧玩家使用的系统，启用此选项后会自动关闭一些网吧客户机系统中几乎不会使用到的服务，如共享服务或防火墙服务等。同时也会对系统做一些特殊优化保证适合大部分网吧网民的使用习惯。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
 						<Option float="true" pos="0,0,520,140" name="opt_netbar" focusbordercolor="#FF2D97DE" bordersize="1" />
 					</VerticalLayout>
 					<VerticalLayout float="true" pos="20,370,550,520" bkcolor="#F7F8F8FF">
-						<Container float="true" pos="10,30,110,110" bkimage="file='Skin\geek.png' source='0,0,80,80' dest='0,0,80,80' " />
+						<Container float="true" pos="10,30,110,110" bkimage="file='geek.png' source='0,0,80,80' dest='0,0,80,80' " />
 						<Text text="极客系统" float="true" pos="100,35,200,60" textcolor="#FF2D97DE" font="2" />						
 						<Text text="此选项适一些系统极客使用，该选项会关闭大部分无关紧要的服务，如美化和某些外设所需的服务。我们假定您对 Windows 系统非常了解，否则请不要选择此选项。" float="true" pos="100,60,500,110" textcolor="#FF222222" font="1" />		
 						<Option float="true" pos="0,0,520,140" name="opt_fastmode" focusbordercolor="#FF2D97DE" bordersize="1" />

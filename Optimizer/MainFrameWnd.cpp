@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "resource.h"
 #include "MainFrameWnd.h"
 
 
@@ -22,7 +23,7 @@ CDuiString CMainFrameWnd::GetSkinFile()
 	return m_strXMLPath;
 }
 
-LPCTSTR CMainFrameWnd::GetWindowClassName(void) const
+LPCTSTR CMainFrameWnd::GetWindowClassName() const
 {
 	return _T("MainFrameWnd");
 }
@@ -37,10 +38,6 @@ void CMainFrameWnd::Notify(TNotifyUI & msg)
 		{
 			Close();
 			PostQuitMessage(0);
-		}
-		if (msg.pSender->GetName() == _T("footer"))
-		{
-			MessageBox(NULL, _T("test"), _T("test"), MB_OK);
 		}
 	}
 }

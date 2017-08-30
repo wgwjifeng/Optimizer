@@ -23,14 +23,15 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	// 设置关联实例
 	CPaintManagerUI::SetInstance(hInstance);
 	// 设置皮肤路径
-	CPaintManagerUI::SetCurrentPath(CPaintManagerUI::GetInstancePath());
-	CPaintManagerUI::SetResourcePath(_T("Skin"));
+	CPaintManagerUI::SetResourceZip(IDR_SKINZIP);
+	//CPaintManagerUI::SetCurrentPath(CPaintManagerUI::GetInstancePath());
+	//CPaintManagerUI::SetResourcePath(_T("Skin"));
 	//CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _T("Skin"));
 	//CPaintManagerUI::SetResourceZip(_T("Skin.zip"));
 
 	CMainFrameWnd* pFrame = new CMainFrameWnd(_T("MainFrame.xml"));
 
-	pFrame->Create(NULL, _T("BarPCMaster"), UI_WNDSTYLE_DIALOG, 0);
+	pFrame->Create(NULL, _T("BarOptimizer"), UI_WNDSTYLE_DIALOG, 0);
 	pFrame->CenterWindow();
 	pFrame->ShowWindow();
 
