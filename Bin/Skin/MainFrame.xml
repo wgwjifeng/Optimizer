@@ -55,7 +55,7 @@
 
 		<!-- 状态栏 -->
 		<HorizontalLayout height="60" bkcolor="#FF3D556D" name="footer">
-		<Button name="btn_close" tooltip="关闭" text="关闭" float="true" pos="180,10,290,50" bkcolor="#FFF28537" font="2" textcolor="#FFFFFFFF"/>
+		<Button name="btn_exit" tooltip="关闭" text="关闭" float="true" pos="180,10,290,50" bkcolor="#FFF28537" font="2" textcolor="#FFFFFFFF"/>
 			<Button name="btn_apply" tooltip="应用" text="应用" float="true" pos="310,10,420,50" bkcolor="#FF2D97DE" font="2" textcolor="#FFFFFFFF"/>
 		</HorizontalLayout>
 	</VerticalLayout>

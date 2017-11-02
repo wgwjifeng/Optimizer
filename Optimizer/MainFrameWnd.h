@@ -19,5 +19,13 @@ protected:
 
 private:
 	CDuiString	m_strXMLPath;
+	SHORT		m_sSelector;
+
+	CButtonUI*	m_pExitButton;
+	CButtonUI*	m_pApplyButton;
+
+	COptionUI*	m_pOptHome;
+	COptionUI*	m_pOptNetBar;
+	COptionUI*	m_pOptFastMode;
 };
 
